@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CreoleBluetoothDemo/CentralViewController.swift"
+            timestampString = "520250450.358953"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "peripheral(_:didUpdateValueFor:error:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CreoleBluetoothDemo.CentralViewController.peripheral (__ObjC.CBPeripheral, didUpdateValueFor : __ObjC.CBCharacteristic, error : Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
+                  moduleName = "CreoleBluetoothDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nirmalsinhrathod/Downloads/CreoleBluetoothDemo/CreoleBluetoothDemo/CentralViewController.swift"
+                  timestampString = "520249926.572788"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "124"
+                  endingLineNumber = "124"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CreoleBluetoothDemo.CentralViewController.peripheral (__ObjC.CBPeripheral, didUpdateValueFor : __ObjC.CBCharacteristic, error : Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
+                  moduleName = "CreoleBluetoothDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nirmalsinhrathod/Downloads/CreoleBluetoothDemo/CreoleBluetoothDemo/CentralViewController.swift"
+                  timestampString = "520249926.574904"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "124"
+                  endingLineNumber = "124"
+                  offsetFromSymbolStart = "352">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CreoleBluetoothDemo/CentralViewController.swift"
+            timestampString = "520250450.358953"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "232"
+            endingLineNumber = "232"
+            landmarkName = "CentralViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CreoleBluetoothDemo/CentralViewController.swift"
+            timestampString = "520250325.092857"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "centralManager(_:didConnect:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

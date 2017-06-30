@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Q2v-Q8-BmF">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CreoleBluetoothDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUk-4C-SsE">
+                                <rect key="frame" x="0.0" y="64" width="320" height="252"/>
+                                <color key="backgroundColor" red="0.19372014330000001" green="0.72494526270000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Central">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCentralClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0eF-g9-Obe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Eo-Hh-X6T">
+                                <rect key="frame" x="0.0" y="316" width="320" height="252"/>
+                                <color key="backgroundColor" red="0.44148089169999999" green="0.57396994430000003" blue="0.37216361460000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Peripheral">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPeripheralClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fYI-04-Swq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sUk-4C-SsE" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="252/568" id="2Fk-xa-Y6o"/>
+                            <constraint firstItem="0Eo-Hh-X6T" firstAttribute="height" secondItem="sUk-4C-SsE" secondAttribute="height" id="4MM-bP-oVk"/>
+                            <constraint firstItem="0Eo-Hh-X6T" firstAttribute="centerX" secondItem="sUk-4C-SsE" secondAttribute="centerX" id="Adf-5A-UDr"/>
+                            <constraint firstItem="sUk-4C-SsE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GGu-tj-stw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0Eo-Hh-X6T" secondAttribute="bottom" id="HEE-dp-UEe"/>
+                            <constraint firstItem="sUk-4C-SsE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="J9w-FE-0oE"/>
+                            <constraint firstAttribute="trailing" secondItem="sUk-4C-SsE" secondAttribute="trailing" id="Mct-16-rfY"/>
+                            <constraint firstItem="0Eo-Hh-X6T" firstAttribute="width" secondItem="sUk-4C-SsE" secondAttribute="width" id="Xnv-Vk-1Tl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ey1-UB-91O"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1113.75" y="123.59154929577466"/>
+        </scene>
+        <!--Central View Controller-->
+        <scene sceneID="9bC-9z-uW1">
+            <objects>
+                <viewController storyboardIdentifier="CentralViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="X7W-Ob-IIm" customClass="CentralViewController" customModule="CreoleBluetoothDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Isg-nw-Xxo"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jc6-9N-p0U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ooX-tJ-DQy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="emi-rE-tjU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="emi-rE-tjU" secondAttribute="trailing" id="F5B-wr-bAG"/>
+                            <constraint firstItem="emi-rE-tjU" firstAttribute="leading" secondItem="ooX-tJ-DQy" secondAttribute="leading" id="HZA-Uv-XIv"/>
+                            <constraint firstItem="emi-rE-tjU" firstAttribute="top" secondItem="ooX-tJ-DQy" secondAttribute="top" id="jRx-t9-NhU"/>
+                            <constraint firstItem="Jc6-9N-p0U" firstAttribute="top" secondItem="emi-rE-tjU" secondAttribute="bottom" id="ji9-TL-ylM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtSendData" destination="emi-rE-tjU" id="ifj-nR-mFC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7pY-nA-JPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800" y="123.59154929577466"/>
+        </scene>
+        <!--Peripheral View Controller-->
+        <scene sceneID="AVL-Zz-pTO">
+            <objects>
+                <viewController storyboardIdentifier="PeripheralViewController" id="JpJ-VD-1bs" customClass="PeripheralViewController" customModule="CreoleBluetoothDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JnU-Qu-lHX"/>
+                        <viewControllerLayoutGuide type="bottom" id="suy-7V-7nX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kl0-U5-z8p">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gax-Ld-hGf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gax-Ld-hGf" secondAttribute="trailing" id="BLC-zt-xMQ"/>
+                            <constraint firstItem="gax-Ld-hGf" firstAttribute="leading" secondItem="kl0-U5-z8p" secondAttribute="leading" id="MDT-uO-t4b"/>
+                            <constraint firstItem="gax-Ld-hGf" firstAttribute="top" secondItem="kl0-U5-z8p" secondAttribute="top" id="WFB-Yv-SAQ"/>
+                            <constraint firstItem="suy-7V-7nX" firstAttribute="top" secondItem="gax-Ld-hGf" secondAttribute="bottom" id="jir-VZ-Sr6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtData" destination="gax-Ld-hGf" id="uoO-Me-vm3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGl-cE-r8I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2522" y="124"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DNI-Wu-IYb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q2v-Q8-BmF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N5n-hO-cPK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="irH-6P-v0h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6hb-Sx-YEU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.25" y="123.59154929577466"/>
+        </scene>
+    </scenes>
+</document>
